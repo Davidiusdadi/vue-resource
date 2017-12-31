@@ -1,4 +1,4 @@
-import _Vue = require('vue');
+import {VueConstructor} from 'vue'
 
 // augment typings of Vue.js
 import './vue';
@@ -91,4 +91,6 @@ export interface Resource extends $resource {
     actions: ResourceActions;
 }
 
-export declare function install(vue: typeof _Vue): void;
+export declare function install(vue: typeof VueConstructor): void;
+
+export default install
