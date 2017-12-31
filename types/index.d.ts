@@ -14,7 +14,7 @@ export interface HttpHeaders {
 }
 
 export interface HttpResponse {
-    data: any;
+    body: Object | Blob | string;
     ok: boolean;
     status: number;
     statusText: string;
