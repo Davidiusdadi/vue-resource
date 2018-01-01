@@ -16,4 +16,9 @@ declare module "vue/types/vue" {
         $http: Http;
         $resource: $resource;
     }
+
+    interface VueConstructor {
+        http: Http
+    }
+
 }
