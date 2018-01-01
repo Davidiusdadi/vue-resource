@@ -48,6 +48,7 @@ export interface HttpInterceptor {
 }
 
 export interface Http {
+    (options: HttpOptions): PromiseLike<HttpResponse>;
     options: HttpOptions & { root: string };
     headers: HttpHeaders;
     interceptors: (HttpInterceptor | (() => HttpInterceptor))[];
